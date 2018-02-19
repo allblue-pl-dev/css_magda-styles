@@ -1,7 +1,6 @@
 /* OBJECTS */
 /* Body */
 body {
-	font-weight: 400;
 	padding-bottom: 0px;
 }
 
@@ -11,21 +10,21 @@ body {
 }
 
 /* Headers */
-h1, h2,h3, h4, h5 {
+h1, h2, h3, h4, h5 {
 	text-align: left; /* force headers NOT to be justified */
 }
 
 /* Images */
 img {
-	$extend .img-responsive;
+	@extend .img-fluid;
 }
 
 img.spacing-top {
-	margin-top:20px;
+	margin-top: 20px;
 }
 
 img.spacing-bottom {
-	margin-bottom:20px;
+	margin-bottom: 20px;
 }
 
 /* Links */
@@ -58,7 +57,7 @@ a:hover, a:active, a:focus, a {
 /* Colors - background */
 /* bg-primary, bg-success, ... */
 .mg-bg-black {
-	background-color: #191919;
+	background-color: $mg-black;
 }
 
 .mg-bg-white {
@@ -72,19 +71,19 @@ a:hover, a:active, a:focus, a {
 /* Colors - text */
 /*text-primary, text-success, ... */
 .mg-highlight {
-	color: $brand-primary;
+	color: $primary;
 }
 
 .mg-highlight-light {
-	color: $brand-success;
+	color: $success;
 }
 
 .mg-desaturate {
-	color: $gray-light;
+	color: $light;
 }
 
 .mg-text-color {
-	color: $text-color;
+	//color: $text-color;
 }
 
 .mg-full {
@@ -96,7 +95,7 @@ a:hover, a:active, a:focus, a {
 	line-height: 200%;
 }
 
-/* No feature */
+/* No features */
 .mg-no-display {
 	display: none;
 }
